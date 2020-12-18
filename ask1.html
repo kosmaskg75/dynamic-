@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Εισαγωγή στη Javascript</title>
+</head>
+<body>
+<h3>Προσθεση με Javascript</h3>
+<label>Δώσε τον πρώτο αριθμό:</label>
+        <input type=number min=1 max=10 id="v1">
+        <br>
+        <label>Δώσε τον δεύτερο αριθμό:</label>
+        <input type=number min=1 max=10 id="v2">
+        <br>
+        <button onclick="ypologise()">Υπολόγισε</button><br>
+        <label>Άθροισμα: </label>
+		<br>
+        <input type=number readonly id="ap"><br>
+        <label>Διαφορά: </label>
+		<br>
+        <input type=number readonly id="ap1"><br>
+        <label>Γινόμενο: </label>
+		<br>
+        <input type=number readonly id="ap2"><br>
+        <label>Πηλίκο: </label>
+		<br>
+        <input type=number readonly id="ap3"><br>
+        
+        <script>
+        function ypologise()
+        {
+            var a=Number(document.querySelector("#v1").value);
+            var b=Number(document.querySelector("#v2").value);
+            document.querySelector("#ap").value=a+b;
+            document.querySelector("#ap1").value=a-b;
+            document.querySelector("#ap2").value=a*b;
+            document.querySelector("#ap3").value=a/b;
+        }
+</script>
+ 
+  
+</body>
+</html>
